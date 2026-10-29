@@ -4,14 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis notas</title>
+  <title>Mis notas | Organiza tus ideas</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>Mis notas</h1>
-  <input id="nota" placeholder="Escribe una nota">
-  <button id="agregar">+</button>
-  <ul id="lista"></ul>
+  <main class="tarjeta">
+    <h1>Mis notas</h1>
+    <p class="ayuda">Anota tus ideas y organiza tus tareas fácilmente.</p>
+
+    <form id="formulario">
+      <label for="nota">Nueva nota</label>
+      <div class="entrada">
+        <input
+          id="nota"
+          type="text"
+          maxlength="200"
+          placeholder="Ej. Terminar mi tarea"
+          required
+        >
+        <button type="submit" class="principal">Agregar</button>
+      </div>
+    </form>
+
+    <section class="seccion-notas" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Mis pendientes</h2>
+      <p id="vacio">Todavía no tienes notas. ¡Agrega la primera!</p>
+      <ul id="lista"></ul>
+    </section>
+
+    <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+  </main>
+
   <script src="app.js"></script>
 </body>
 </html>
