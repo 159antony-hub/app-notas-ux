@@ -1,0 +1,18 @@
+
+body {
+  font-family: Arial;
+  background: white;
+  color: gray;
+  text-align: center;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  background: #ddd;
+  color: white;
+  border: none;
+}
